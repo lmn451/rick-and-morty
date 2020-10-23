@@ -10,10 +10,8 @@ export default ({
   location,
   origin,
 }) => {
-  let uid = `#${name
-    .split(" ")
-    .join("")
-    .toLowerCase()}ID${id}`;
+  const uid = `#${name.split(" ").join("").toLowerCase()}ID${id}`;
+  const className = `upper ${status.toLowerCase()}`;
   return (
     <div className='container'>
       <img src={image} alt='' />
@@ -21,7 +19,7 @@ export default ({
         <h5>{uid}</h5>
         <h3>
           {name}
-          <sup className={`upper ${status.toLowerCase()}`}>{status}</sup>
+          <sup className={className}>{status}</sup>
         </h3>
         <h4>Категория: {species}</h4>
         <h4>Пол: {gender}</h4>

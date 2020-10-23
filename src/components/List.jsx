@@ -1,10 +1,14 @@
 import React from "react";
 import Card from "./Card";
 
-export default function List({ heroes }) {
+export default function List({ episode, heroes }) {
   return (
     <div>
-      <span className='info'>B базе удалось найти:</span>
+      <span className='info'>
+        {episode
+          ? `В эпизоде номер ${episode} принимали участие:`
+          : `Все герои`}
+      </span>
       <ul className='wrapper'>
         {heroes.map((v, i) => (
           <li key={i}>

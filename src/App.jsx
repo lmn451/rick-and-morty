@@ -29,7 +29,11 @@ function App() {
   return (
     <>
       <Header onChange={changeHandler} episode={episode} />
-      {toShow.length ? <List heroes={toShow} /> : <NothingFound />}
+      {toShow.length ? (
+        <List episode={episode} heroes={toShow} />
+      ) : (
+        <NothingFound />
+      )}
     </>
   );
 }
