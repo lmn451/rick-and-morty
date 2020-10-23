@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import NothingFound from "./components/NothingFound/NothingFound";
+import NothingFound from "./components/NothingFound";
 import "./App.css";
-import List from "./components/List/List";
-import Header from "./components/Header/Header";
+import List from "./components/List";
+import Header from "./components/Header";
 
 function App() {
   const [heroes, setHeroes] = useState([]);
