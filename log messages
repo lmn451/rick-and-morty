@@ -1,0 +1,54 @@
+14:13:11 gnome-shell: Can't update stage views actor StWidget is on because it needs an allocation.
+14:13:11 gnome-logs: Theme parsing error: colors.css:77:65: Invalid number for color value
+14:13:11 dbus-daemon: [session uid=1000 pid=2231] Successfully activated service 'org.gnome.Logs'
+14:13:11 gnome-shell: libinput error: event5  - ELAN2301:00 04F3:306B Touchpad: client bug: event processing lagging behind by 19ms, your system is too slow
+14:13:11 dbus-daemon: [session uid=1000 pid=2231] Activating service name='org.gnome.Logs' requested by ':1.38' (uid=1000 pid=2509 comm="/usr/bin/gnome-shell " label="unconfined")
+14:13:09 gnome-shell: Can't update stage views actor ClutterText is on because it needs an allocation.
+14:13:09 org.gnome.Chara: Theme parsing error: colors.css:77:65: Invalid number for color value
+14:13:09 systemd: Started GNOME Terminal Server.
+14:13:09 dbus-daemon: [session uid=1000 pid=2231] Successfully activated service 'org.gnome.Terminal'
+14:13:09 gnome-terminal-: Display does not support owner-change; copy/paste will be broken!
+14:13:09 dbus-daemon: [session uid=1000 pid=2231] Successfully activated service 'org.gnome.Nautilus'
+14:13:09 gnome-terminal-: Theme parsing error: colors.css:77:65: Invalid number for color value
+14:13:09 gnome-shell: Can't update stage views actor ClutterText is on because it needs an allocation.
+14:13:09 dbus-daemon: [session uid=1000 pid=2231] Successfully activated service 'org.gnome.ControlCenter.SearchProvider'
+14:13:09 gnome-shell: Can't update stage views actor StBin is on because it needs an allocation.
+14:13:09 systemd: Starting GNOME Terminal Server...
+14:13:09 dbus-daemon: [session uid=1000 pid=2231] Activating via systemd: service name='org.gnome.Terminal' unit='gnome-terminal-server.service' requested by ':1.38' (uid=1000 pid=2509 comm="/usr/bin/gnome-shell " label="unconfined")
+14:13:04 gnome-shell: Can't update stage views actor StWidget is on because it needs an allocation.
+14:13:02 systemd: app-gnome-gnome\x2dsystem\x2dlog-19675.scope: Succeeded.
+14:13:01 gnome-shell: Can't update stage views actor StWidget is on because it needs an allocation.
+14:13:01 systemd: app-gnome-gnome\x2dsystem\x2dmonitor-21139.scope: Succeeded.
+14:12:55 gnome-shell: JS ERROR: TypeError: windowList is null
+guessWindowXID@/usr/share/gnome-shell/extensions/pixel-saver@deadalnix.me/decoration.js:94:19
+onWindowAdded/<@/usr/share/gnome-shell/extensions/pixel-saver@deadalnix.me/decoration.js:289:26
+
+14:12:14 systemd: gnome-terminal-server.service: Succeeded.
+14:12:04 org.gnome.Chara: JS LOG: Failed to search by keywords: Operation was cancelled
+14:12:04 nautilus: Theme parsing error: colors.css:77:65: Invalid number for color value
+14:12:04 gnome-calculato: search-provider.vala:140: Failed to spawn Calculator: Child process killed by signal 9
+14:12:04 dbus-daemon: [session uid=1000 pid=2231] Successfully activated service 'org.gnome.Calculator.SearchProvider'
+14:12:04 systemd: Started GNOME Terminal Server.
+14:12:04 dbus-daemon: [session uid=1000 pid=2231] Successfully activated service 'org.gnome.Terminal'
+14:12:04 gnome-terminal-: Display does not support owner-change; copy/paste will be broken!
+14:12:04 dbus-daemon: [session uid=1000 pid=2231] Successfully activated service 'org.gnome.Characters.BackgroundService'
+14:12:04 gnome-control-c: Theme parsing error: colors.css:77:65: Invalid number for color value
+14:12:04 gnome-shell: Can't update stage views actor ClutterText is on because it needs an allocation.
+14:12:04 dbus-daemon: [session uid=1000 pid=2231] Successfully activated service 'org.gnome.ControlCenter.SearchProvider'
+14:12:04 systemd: Starting GNOME Terminal Server...
+14:12:04 dbus-daemon: [session uid=1000 pid=2231] Activating via systemd: service name='org.gnome.Terminal' unit='gnome-terminal-server.service' requested by ':1.38' (uid=1000 pid=2509 comm="/usr/bin/gnome-shell " label="unconfined")
+14:11:58 gnome-system-mo: glibtop(c=21139): [WARNING] statvfs '/run/user/1000/doc' failed: Operation not permitted
+14:11:50 gnome-shell: Can't update stage views actor StWidget is on because it needs an allocation.
+14:11:49 gnome-system-mo: Theme parsing error: colors.css:77:65: Invalid number for color value
+14:11:49 systemd: Started Application launched by gnome-shell.
+14:11:49 zeitgeist-datah: zeitgeist-datahub.vala:210: Error during inserting events: GDBus.Error:org.gnome.zeitgeist.EngineError.InvalidArgument: Incomplete event: interpretation, manifestation and actor are required
+14:11:45 systemd: gnome-terminal-server.service: Succeeded.
+14:11:15 sudo: pam_unix(sudo:session): session closed for user root
+14:11:04 systemd-resolve: Server returned error NXDOMAIN, mitigating potential DNS violation DVE-2018-0001, retrying transaction with reduced feature level UDP.
+14:10:59 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+14:10:46 systemd: Started PackageKit Daemon.
+14:10:46 dbus-daemon: [system] Successfully activated service 'org.freedesktop.PackageKit'
+14:10:46 packagekitd: daemon start
+14:10:46 systemd: Starting PackageKit Daemon...
+14:10:46 dbus-daemon: [system] Activating via systemd: service name='org.freedesktop.PackageKit' unit='packagekit.service' requested by ':1.145' (uid=0 pid=20765 comm="/usr/bin/gdbus call --system --dest org.freedeskto" label="unconfined")
+14:10:44 systemd-resolve: Server returned error NXDOMAIN, mitigating potential DNS violation DVE-2018-0001, retrying transaction with reduced feature level UDP.

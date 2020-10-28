@@ -17,17 +17,26 @@ function App() {
       `https://rickandmortyapi.com/api/episode/${episode}`
     );
   };
+  // const filterBySeason =v={
+  //  .filter(v => v.substring(v.lastIndexOf("/") + 1, v.length) / 10 <= 1)
+  //   return v.
+  // }
   const toShow = heroes.filter(filterByEp);
 
   useEffect(() => {
     fetch("https://rickandmortyapi.com/api/character")
       .then(res => res.json())
-      .then(json => setHeroes(json.results))
+      .then(json => {
+        // json.results.forEach(v => {
+        // });
+        setHeroes(json.results);
+        return;
+      })
       .catch(err => console.log(err));
   }, []);
-
   return (
     <>
+      {/* {console.log(heroes)} */}
       <Header onChange={changeHandler} episode={episode} />
       {toShow.length ? (
         <List episode={episode} heroes={toShow} />
