@@ -3,6 +3,7 @@ import NothingFound from "./components/NothingFound";
 import "./App.css";
 import List from "./components/List";
 import Header from "./components/Header";
+import beautify from "./helper";
 
 function App() {
   const [heroes, setHeroes] = useState([]);
@@ -11,32 +12,22 @@ function App() {
   const changeHandler = e => {
     setEpisodes(e.target.value);
   };
+
   const filterByEp = v => {
     if (!episode) return true;
-    return v.episode.includes(
-      `https://rickandmortyapi.com/api/episode/${episode}`
-    );
+    return v.episode.includes(Number(episode));
   };
-  // const filterBySeason =v={
-  //  .filter(v => v.substring(v.lastIndexOf("/") + 1, v.length) / 10 <= 1)
-  //   return v.
-  // }
+
   const toShow = heroes.filter(filterByEp);
 
   useEffect(() => {
     fetch("https://rickandmortyapi.com/api/character")
       .then(res => res.json())
-      .then(json => {
-        // json.results.forEach(v => {
-        // });
-        setHeroes(json.results);
-        return;
-      })
+      .then(json => setHeroes(beautify(json.results)))
       .catch(err => console.log(err));
   }, []);
   return (
     <>
-      {/* {console.log(heroes)} */}
       <Header onChange={changeHandler} episode={episode} />
       {toShow.length ? (
         <List episode={episode} heroes={toShow} />

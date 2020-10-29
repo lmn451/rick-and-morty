@@ -9,6 +9,7 @@ export default ({
   gender,
   location,
   origin,
+  seasons,
 }) => {
   const uid = `#${name.split(" ").join("").toLowerCase()}ID${id}`;
   const className = `upper ${status.toLowerCase()}`;
@@ -25,6 +26,7 @@ export default ({
         <h4>Пол: {gender}</h4>
         <h4>Начало: {origin.name}</h4>
         <h4>Mестоположение: {location.name}</h4>
+        <h4>Был в сезоне: {seasons.map(x => x + " ")}</h4>
       </div>
     </div>
   );
